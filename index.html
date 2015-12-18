@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Final Project - Xinhe Yu</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic' rel='stylesheet' type='text/css'>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <h1>Airbnb:Boston</h1>
+    <h2>By Xinhe Yu</h2>
+    <div class="canvas" id="map">
+        <div class="custom-tooltip">
+            <p class="ttclass">Address: <span class="Tvalue" id="tooltip_address"></span></p>
+            <p class="ttclass">Price: <span class="Tvalue" id="tooltip_price"></span></p>
+            <p class="ttclass">Bedrooms: <span class="Tvalue" id="tooltip_bedrooms"></span></p>
+            <p class="ttclass">Bathrooms: <span class="Tvalue" id="tooltip_bathrooms"></span></p>
+            <p class="ttclass">Overall: <span class="Tvalue" id="tooltip_overall"></span></p>
+        </div>
+        <div class="controls btn-group">
+            <p>Price Range <a href="#" class="btn btn-default" id="clear">Clear</a>
+                <a href="#" class="btn btn-default" id="map">All</a>
+                <a href="#" class="btn btn-default" id="0-63">0-63</a>
+                <a href="#" class="btn btn-default" id="63-75">63-75</a>
+                <a href="#" class="btn btn-default" id="75-90">75-90</a>
+                <a href="#" class="btn btn-default" id="90-105">90-105</a>
+                <a href="#" class="btn btn-default" id="105-130">105-130</a>
+                <a href="#" class="btn btn-default" id="130-150">130-150</a>
+                <a href="#" class="btn btn-default" id="150-189">150-189</a>
+                <a href="#" class="btn btn-default" id="189-235">189-235</a>
+                <a href="#" class="btn btn-default" id="235-300">235-300</a>
+                <a href="#" class="btn btn-default" id="300-2100">300-2100</a></p>
+
+        </div>
+
+    </div>
+    <div class="bar" id="barchart">
+        <h2>Histogram</h2>
+        <p>Price Range</p>
+        <div class="bar-tooltip">
+            <p class="ttclass">Amout: <span class="bar-tool" id="tooltip_amount"></span></p>
+            <p class="ttclass">Price Range: <span id="PR"></span></p>
+    </div>
+</div><!--.container-->
+
+<!-- Scripts -->
+<script src="script/lib/d3/d3.min.js" charset="utf-8"></script>
+<script src="script/lib/queue/queue.min.js"></script>
+<script src="script/script.js"></script>
+</body>
+</html>
